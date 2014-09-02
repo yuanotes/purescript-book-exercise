@@ -1,0 +1,23 @@
+{
+  "name": "purescript-book-exercise",
+  "version": "0.1.0",
+  "homepage": "https://github.com/yuanotes/purescript-book-exercise",
+  "authors": [
+    "Brooklyn Chen <yuanotes@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "purescript-math": "*",
+    "purescript-control": "*",
+    "purescript-lists": "*"
+  }
+}

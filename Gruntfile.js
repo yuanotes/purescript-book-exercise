@@ -1,20 +1,19 @@
 module.exports = function(grunt){
     "use strict";
     grunt.initConfig({
+        srcFiles: ["src/**/*.purs"],
         psc: {
             options: {
-                main: "Chapter2",
-                modules: ["Chapter2"]
+                modules: ["PhoneBook"]
             },
-        all: {
-            src: ["src/**/*.purs",
-                  "bower_components/**/src/**/*.purs"],
-
-            dest: "dist/Main.js"
+            all: {
+                src: ["<%=srcFiles%>",
+                      "bower_components/**/src/**/*.purs"],
+                dest: "dist/Main.js"
             }
         },
-        dotPsci: ["src/**/*.purs",
-              "bower_components/**/src/**/*.purs"],
+        dotPsci: ["<%=srcFiles%>",
+                  "bower_components/**/src/**/*.purs"],
         execute: {
             target: "dist/Main.js"
         }
